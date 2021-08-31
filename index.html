@@ -40,179 +40,6 @@
   <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
 
-  <!-- Matomo -->
-  <script type="text/javascript">
-    var _paq = _paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function () {
-      var u = "//dxe1.jhobbs.net/piwik/";
-      _paq.push(['setTrackerUrl', u + 'piwik.php']);
-      _paq.push(['setSiteId', '7']);
-      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-      g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
-    })();
-  </script>
-  <!-- End Matomo Code -->
-  <!-- for petition -->
-  <script>
-
-    //signon_embed js
-
-    /** Sign the Petition **/
-
-    function petitionSign() {
-      var form = $('.signit-form');
-      var error = $('div.error');
-
-      error.hide();
-
-      var sfbayZips = ['94701', '94712', '94703', '94709', '94702', '94720', '94704', '94706', '94705', '94710', '94707', '94708', '94609', '94618', '94608', '94662', '94530', '94611', '94615', '94612', '94607', '94563', '94610', '94604', '94614', '94620', '94622', '94623', '94624', '94649', '94659', '94660', '94661', '94666', '94617', '94516', '94804', '94805', '94606', '94602', '94802', '94808', '94850', '94803', '94130', '94501', '94601', '94807', '94820', '94613', '94619', '94806', '94570', '94575', '94801', '94111', '94564', '94133', '94105', '94104', '94549', '94108', '94547', '94158', '94556', '94553', '94502', '94109', '94107', '94621', '94103', '94123', '94102', '94605', '94119', '94120', '94125', '94126', '94137', '94139', '94140', '94141', '94142', '94143', '94144', '94145', '94146', '94147', '94151', '94159', '94160', '94161', '94163', '94164', '94172', '94177', '94188', '94920', '94603', '94115', '94595', '94572', '94597', '94124', '94110', '94966', '94117', '94129', '94118', '94114', '94523', '94546', '94577', '94525', '94134', '94131', '94974', '94964', '94569', '94596', '94925', '94121', '94578', '94122', '94127', '94112', '94965', '94579', '94976', '94901', '94116', '94939', '94518', '94977', '94942', '94005', '94522', '94524', '94527', '94529', '94016', '94580', '94598', '94590', '94132', '94507', '94526', '94904', '94014', '94912', '94913', '94914', '94915', '94520', '94941', '94583', '94017', '94957', '94592', '94083', '94519', '94080', '94528', '94541', '94591', '94979', '94510', '94015', '94540', '94543', '94557', '94903', '94128', '94589', '94521', '94545', '94960', '94978', '94066', '94542', '94552', '94949', '94030', '94506', '94544', '94011', '94401', '94582', '94565', '94044', '94930', '94497', '94970', '94010', '94404', '94517', '94973', '94568', '94587', '94403', '94998', '94948', '94503', '94402', '94065', '94924', '94945', '94588', '94963', '94555', '94933', '94002', '94938', '94947', '94063', '94534', '94038', '94070', '94946', '94037', '94536', '94559', '94585', '94509', '94064', '94560', '94531', '94537', '94018', '95476', '94566', '94061', '94019', '94551', '94954', '94025', '95487', '94026', '94027', '94513', '94581', '94538', '94512', '94950', '94303', '94956', '94586', '94301', '94302', '94309', '94539', '94533', '94305', '94999', '94953', '95433', '94975', '94062', '94955', '94306', '94304', '95416', '94043', '94535', '95002', '94035', '94089', '94514', '94023', '94028', '94548', '94039', '94042', '94040', '94041', '95431', '94022', '94571', '95134', '94561', '94085', '94505', '95036', '94952', '94024', '94951', '95696', '95054', '94088', '94086', '95442', '94511', '95391', '94599', '94087', '95687', '95625', '95131', '94937', '94931', '94926', '94927', '95051', '94562', '95052', '95055', '95056', '95035', '94928', '95050', '95015', '94074', '95132', '94020', '95688', '94940', '95053', '95452', '95014', '95133', '94573', '95129', '95110', '95641', '95101', '95117', '95112', '95103', '95106', '95108', '95109', '95115', '95150', '95151', '95152', '95153', '95154', '95155', '95156', '95157', '95158', '95159', '95160', '95161', '95164', '95170', '95172', '95173', '95190', '95191', '95193', '95194', '95196', '95128', '95113', '95126', '94550', '95192', '95116', '94021', '94971', '95127', '95130', '95620', '95009', '95011', '95071', '95122', '95407', '95070', '95409', '95008', '95125', '95404', '95405', '94558', '94929', '95219', '95406', '95402', '95148', '95234', '95680', '95124', '95690', '94060', '95121', '95376', '94972', '95378', '95030', '95473', '95111', '95140', '95118', '95031', '94574', '95136', '95377', '95206', '95686', '94576', '94922', '95401', '95032', '95472', '95006', '95615', '95242', '95304', '95123']
-
-      var sfbay = false;
-
-      var formData = form.serialize();
-
-      $('.signit-btn-sign').attr('disabled', true);
-
-      var sendyList = 'Jx892mirlwaaY8uFHms763uCrw';
-
-      var sfbayList = '7xHfg85E19lj763ubrr95e1g';
-
-      var sendyName = $('.signit-field-name').serialize();
-
-      var sendyEmail = $('.signit-field-email').serialize();
-
-      var sendySource = 'Source=Petition+(Amazon)' // SET SOURCE (PETITION NAME) HERE
-
-      var sendyLocation = $('.signit-field-country').serialize();
-
-      if (sendyLocation == "country=United+States") {
-        sendyLocation = $('.signit-field-zip').serialize();
-
-        var zipToCheck = $('.signit-field-zip').val();
-
-        if (sfbayZips.indexOf(zipToCheck) != -1) {
-          // this is an sfbay zip code, so add them to the local mailing list too
-          sfbay = true;
-        }
-      }
-
-      sendyLocation = sendyLocation.substring(sendyLocation.indexOf("=") + 1);
-
-      var fullName = sendyName.substring(sendyName.indexOf("=") + 1);
-
-      var sendyFirstName = '';
-      var sendyLastName = '';
-      var i = fullName.indexOf('+');
-      if (i == -1) {
-        // There are no spaces in userName
-        sendyFirstName = fullName
-      }
-      else {
-        sendyFirstName = fullName.slice(0, i);
-        sendyLastName = fullName.slice(i + 1);
-      }
-
-      var sendyData = ("list=" + sendyList + "&" + sendyName + "&" + sendyEmail + "&" + sendySource + "&Location=" + sendyLocation + "&FirstName=" + sendyFirstName + "&LastName=" + sendyLastName);
-
-      console.log(sendyData);
-
-      $.ajax({
-        url: 'https://sendy.dxetech.org/subscribe',
-        data: sendyData,
-        dataType: 'text',
-        type: 'post',
-        contentType: 'application/x-www-form-urlencoded',
-      });
-
-      if (sfbay == true) {
-        var sfbayData = ("list=" + sfbayList + "&" + sendyName + "&" + sendyEmail + "&" + sendySource + "&Location=" + sendyLocation + "&FirstName=" + sendyFirstName + "&LastName=" + sendyLastName);
-
-        $.ajax({
-          url: 'https://sendy.dxetech.org/subscribe',
-          data: sfbayData,
-          dataType: 'text',
-          type: 'post',
-          contentType: 'application/x-www-form-urlencoded',
-        });
-      }
-
-      $.ajax({
-        url: form.attr('action'),
-        data: formData,
-        dataType: 'jsonp',
-        success: function (data) {
-
-          if (!data.ok) {
-            $('.signit-btn-sign').attr('disabled', false);
-            error.show();
-            return false;
-          }
-
-          //yay!  success -- display thanks message etc.
-          //ga('send', 'event', ANALYTICS_CATEGORY, 'signed petition');
-
-          _paq.push(['trackEvent', 'Petition', 'Petition Signed', 'Amazon']);
-
-
-
-          setTimeout(function () { document.getElementById("petition-thanks").innerHTML = "<h3><br /><br /><br /><br /><br />Thank you for signing!</h3>"; }, 1000);
-
-        }
-      });
-    }
-
-
-    //helpers
-
-    function toggle_full_info_link_text() {
-
-      var full_info = "&gt; Full Info on this Petition";
-      var outside_us = "&gt; Outside the US?  Sign Here.";
-
-      var full_info_elt = $(".full-info-link");
-
-      if (full_info_elt.html() == full_info) {
-        full_info_elt.html(outside_us);
-      } else {
-        full_info_elt.html(full_info);
-      }
-    }
-
-
-    $(document).ready(function () {
-
-      //add reveal form action
-
-      $('button.unfold').click(function () {
-        $('section.signit-now').show();
-        $('.signit-goals').insertAfter('.signit-myemail');
-        $('button.unfold').hide();
-        toggle_full_info_link_text();
-      }); //click
-
-      //add petition signing action
-      $('.signit-form').submit(function () {
-        petitionSign();
-        return false;
-      });
-    });//document ready
-
-
-    function countryCheck() {
-      if (document.getElementById('country').value === 'United States') {
-        document.getElementById('zip').style.visibility = 'visible';
-        document.getElementById('zip').setAttribute("required", true);
-      } else {
-        document.getElementById('zip').style.visibility = 'hidden';
-        document.getElementById('zip').removeAttribute("required");
-      }
-    }
-
-  </script>
-
   <style>
     .content-inner {
       max-width: 1500px;
@@ -244,83 +71,6 @@
 
     .sqs-gallery-block-slideshow .meta .meta-description p {
       font-size: 17px !important;
-    }
-
-
-    .petition-description {
-      font-size: 20px;
-      text-align: center;
-    }
-
-    input, select {
-      width: 80%;
-      padding: 12px;
-      margin: 6px 0 4px;
-      border: 1px solid #ccc;
-      background: #fafafa;
-      font-family: sans-serif;
-      font-size: 12px;
-      line-height: normal;
-      box-sizing: border-box;
-      border-radius: 2px;
-      height: 40px;
-    }
-
-    .signit-myname, .signit-myaddr, .signit-myemail {
-      text-align: center;
-    }
-
-    .signit-btn-sign, .btn-sign, #facebookShare, #twitterShare {
-      padding: 25px 46px;
-      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-size: 20px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 600;
-      font-style: normal;
-      color: #fff;
-      background-color: #272727;
-      border-color: #272727;
-      margin-top: 20px;
-    }
-
-    .bump-above {
-      text-align: center;
-    }
-
-    .signit-goals {
-      text-align: center;
-    }
-
-    #signon-logo {
-      width: 140px;
-    }
-
-    .success {
-      text-align: center;
-      width: 60%;
-      margin: 0 auto;
-      display: none;
-    }
-
-    .thank-you {
-      font-size: 18px;
-      font-weight: 500;
-    }
-
-    .error {
-      color: #b70303;
-      font-weight: 600;
-      text-align: center;
-      width: 100%;
-      margin: 0 auto;
-      position: absolute;
-      top: -14px;
-    }
-
-    .success.thank-you a {
-      cursor: pointer;
     }
 
     .title-desc-wrapper.over-image.has-main-image {
@@ -390,26 +140,11 @@
         <div class="intro-heading text-uppercase">Amazon is shipping animal cruelty into 300 million homes around the world, but activists are rising up to take on this corporate giant. </div>
         <div class="row">
           <div class="col-md">
-            <div class="embed-responsive embed-responsive-1by1 video-top">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dwIG-qhujOE?rel=0" allowfullscreen></iframe>
-            </div>
-            <br />
-          </div>
-          <div class="col-md">
-
-            <div id="petition-wrapper" style="display:none; margin-top: -50px;">
-
-              <script defer src="https://storage.googleapis.com/dxe-petitions/api.js"></script>
-              <dxe-petition petition="one-click-cruelty"></dxe-petition>
-              <div style="font-size: 12px; margin-top: -70px;">
-                <center>
-                  Note: By signing, you agree to receive email messages from Direct Action Everywhere. You may unsubscribe at any time.
-                  <br /><br />
-                </center>
+            <center>
+              <div class="embed-responsive embed-responsive-1by1 video-top">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dwIG-qhujOE?rel=0" allowfullscreen></iframe>
               </div>
-
-            </div>
-
+            </center>
           </div>
         </div>
       </div>
@@ -722,26 +457,12 @@
     </div>
   </div>
 
-  <script>
-
-    $(window).on('load', function() {
-      console.log("Loaded");
-      $('#thermo-wrap').hide();
-      $('#petition-wrapper').show();
-    });
-
-  </script>
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Contact form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.js"></script>

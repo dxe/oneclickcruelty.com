@@ -695,4 +695,5 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
         -webkit-box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 10px;
         -o-box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 10px;
         box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 10px;
+        max-width: 500px;
     }
